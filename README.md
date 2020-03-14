@@ -40,6 +40,3 @@ Copyright (c) 2020 Abdelhafidh Belalia (s77rt) <admin@abdelhafidh.com>
 
 ### Changelog
 Refer to [CHANGELOG.md](https://github.com/s77rt/pcapng2pcap/blob/master/docs/CHANGELOG.md)
-
-### Limits
-Refer to [limits.txt](https://github.com/s77rt/pcapng2pcap/blob/master/docs/limits.txt)
