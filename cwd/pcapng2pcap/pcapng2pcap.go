@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"strings"
 	LZREADER "github.com/s77rt/pcapng2pcap/pkg/lzreader"
-	PCAPNG "github.com/s77rt/pcapng2pcap/internal/libpcapng"
+	PCAPNG "github.com/s77rt/pcapng2pcap/pkg/libpcapng"
 )
 
 var version = "dev"

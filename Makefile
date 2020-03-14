@@ -11,7 +11,12 @@ LD_FLAGS = "-X 'main.version=$(PRODUCTION_VERSION)' -X 'main.gitCommit=$(GIT_COM
 
 .PHONY: test
 
-all: clean test build
+all: clean dep test build
+
+dep:
+	@echo -n "Downloading Dependencies: "
+	@go get -t ./...
+	@echo "[OK]"
 
 clean:
 	@echo -n "Cleaning: "

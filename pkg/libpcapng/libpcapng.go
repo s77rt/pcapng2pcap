@@ -6,7 +6,7 @@ import (
 	"bufio"
 	"fmt"
 	LZREADER "github.com/s77rt/pcapng2pcap/pkg/lzreader"
-	PCAP "github.com/s77rt/pcapng2pcap/internal/libpcap"
+	PCAP "github.com/s77rt/pcapng2pcap/pkg/libpcap"
 )
 
 const (

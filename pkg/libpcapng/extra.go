@@ -7,7 +7,7 @@ Kept for ref/future use.
 import (
 	"encoding/binary"
 	LZREADER "github.com/s77rt/pcapng2pcap/pkg/lzreader"
-	// PCAP "github.com/s77rt/pcapng2pcap/internal/libpcap"
+	// PCAP "github.com/s77rt/pcapng2pcap/pkg/libpcap"
 )
 
 /*
