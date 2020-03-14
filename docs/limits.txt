@@ -1,0 +1,2 @@
+- PCAPNG BigEndian (Endianness) files are not supported
+- PCAPNG timestamps's resolutions that are different than 10^-6 are not supported
