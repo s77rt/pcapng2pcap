@@ -15,7 +15,7 @@ all: clean dep test build
 
 dep:
 	@echo -n "Downloading Dependencies: "
-	@go get -u ./...
+	@go get -d ./...
 	@echo "[OK]"
 
 clean:

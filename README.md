@@ -42,7 +42,14 @@ Copyright (c) 2020 Abdelhafidh Belalia (s77rt) <admin@abdelhafidh.com>
 Refer to [CHANGELOG.md](https://github.com/s77rt/pcapng2pcap/blob/master/docs/CHANGELOG.md)
 
 ## Troubleshooting
+### no install location for directory
+```
+export GOPATH=$(go env GOPATH)
+export GOBIN=$(go env GOPATH)/bin
+```
+
 ### pcapng2pcap: command not found
 Add $GOPATH/bin to $PATH `export PATH=$PATH:$(go env GOPATH)/bin`
 
+___
 [Report a bug / Submit a new issue](https://github.com/s77rt/pcapng2pcap/issues/new)
