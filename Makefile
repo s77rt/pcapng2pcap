@@ -15,7 +15,7 @@ all: clean dep test build
 
 dep:
 	@echo -n "Downloading Dependencies: "
-	@go get -t ./...
+	@go get -u ./...
 	@echo "[OK]"
 
 clean:
@@ -27,7 +27,7 @@ clean:
 test:
 	@mkdir -p $(TMP_DIR)
 	@for f in $(SCRIPTS_DIR)*_test.sh; do \
-		bash "$$f" 'go run -ldflags $(LD_FLAGS) $(CWD_DIR)$(PROJECT_NAME)' '$(TEST_DIR)' '$(TMP_DIR)' || exit 1; \
+		bash "$$f" 'go run -ldflags $(LD_FLAGS) $(CWD_DIR)$(PROJECT_NAME)/$(PROJECT_NAME).go' '$(TEST_DIR)' '$(TMP_DIR)' || exit 1; \
 	done
 	@rm -rf $(TMP_DIR)
 
@@ -43,7 +43,7 @@ install:
 	@echo "[OK]"
 
 run:
-	@go run -ldflags $(LD_FLAGS) $(CWD_DIR)$(PROJECT_NAME)
+	@go run -ldflags $(LD_FLAGS) $(CWD_DIR)$(PROJECT_NAME)/$(PROJECT_NAME).go
 
 compile:
 	@echo "Compiling: "

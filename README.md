@@ -1,7 +1,7 @@
-## pcapng2pcap
+# pcapng2pcap
 convert pcapng capture file to pcap
 
-### Features
+## Features
 - Convert simple pcapng to pcap
 - Convert simple gzipped pcapng to pcap
 - Convert complex* pcapng to pcap
@@ -9,7 +9,7 @@ convert pcapng capture file to pcap
 
 \*contains multiple section header blocks
 
-### Building
+## Building
 ```
 git clone https://github.com/s77rt/pcapng2pcap.git
 cd pcapng2pcap
@@ -17,7 +17,7 @@ make
 make install
 ```
 
-### Usage
+## Usage
 ```
 pcapng2pcap 0.1.0
 convert pcapng capture file to pcap.
@@ -38,5 +38,11 @@ MIT License
 Copyright (c) 2020 Abdelhafidh Belalia (s77rt) <admin@abdelhafidh.com>
 ```
 
-### Changelog
+## Changelog
 Refer to [CHANGELOG.md](https://github.com/s77rt/pcapng2pcap/blob/master/docs/CHANGELOG.md)
+
+## Troubleshooting
+### pcapng2pcap: command not found
+Add $GOPATH/bin to $PATH `export PATH=$PATH:$(go env GOPATH)/bin`
+
+[Report a bug / Submit a new issue](https://github.com/s77rt/pcapng2pcap/issues/new)
